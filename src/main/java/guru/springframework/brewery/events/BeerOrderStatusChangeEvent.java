@@ -25,12 +25,19 @@ public class BeerOrderStatusChangeEvent extends ApplicationEvent {
 
     private final OrderStatusEnum previousStatus;
 
+    private BeerOrder beerOrder;
+
     public BeerOrderStatusChangeEvent(BeerOrder source, OrderStatusEnum previousStatus) {
         super(source);
         this.previousStatus = previousStatus;
+        this.beerOrder=source;
     }
 
     public OrderStatusEnum getPreviousStatus() {
         return previousStatus;
+    }
+
+    public BeerOrder getBeerOrder() {
+        return beerOrder;
     }
 }

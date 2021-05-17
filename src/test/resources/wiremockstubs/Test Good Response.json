@@ -1,0 +1,13 @@
+{
+  "id": "1",
+  "request": {
+    "url": "/v1/players/1",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"playerId\":\"1\"}",
+    "transformers": ["response-template"]
+  },
+  "uuid": "1234"
+}
